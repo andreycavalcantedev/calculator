@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div id="calculateArea">
+            <p id="calc"></p>
+            <p id="resul"></p>
+        </div>
+        <div id="button">
+            <button onclick="backspace()">CE</button>
+            <button onclick="clearEntry()">c</button>
+            <button onclick="percentage()">%</button>
+            <button onclick="multiplication()">×</button><br>
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button>
+            <button onclick="division()">/</button><br>
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six">6</button>
+            <button onclick="sum()">+</button><br>
+            <button id="seven">7</button>
+            <button id="eigth">8</button>
+            <button id="nine">9</button>
+            <button onclick="subtraction()">-</button><br>
+            <button onclick="sumSub()">+/-</button>
+            <button id="zero">0</button>
+            <button onclick="bool()">.</button>
+            <button onclick="equal()">=</button>
+        </div>
+
+        <script src="script.js"></script>
+    </section>
+</body>
+</html>
