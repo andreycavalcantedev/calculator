@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <section id="calculator">
         <div id="calculateArea">
             <p id="calc"></p>
+            <button id="openModal">H</button>
+            <div id="modalFade" class="hide"></div>
+            <div id="modal" class="hide">
+                    <h1>Histórico</h1>
+                    <button id="closeModal">X</button>
+                    <select id="history" size="10"></select>
+            </div>
             <p id="resul"></p>
         </div>
         <div id="button">
@@ -35,7 +42,8 @@
             <button onclick="equal()">=</button>
         </div>
 
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
+        <script src="modal.js" defer></script>
     </section>
 </body>
 </html>
