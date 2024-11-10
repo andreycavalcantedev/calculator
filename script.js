@@ -124,7 +124,7 @@ function calculated() {
                 let bool3 = `${bool1}.${bool2}`
                 resulExp.splice(item - 1, 3, Number(bool3))
                 item -= 1
-        }
+            }
         }
         for (let item = 0; item < resulExp.length; item++) {
             if (resulExp[item] == '/') {
@@ -179,3 +179,5 @@ function updateDisplay() {
     calc.innerText = expression.join(' ')
     calculated()
 }
+
+
